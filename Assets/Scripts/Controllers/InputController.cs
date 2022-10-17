@@ -15,6 +15,7 @@ namespace BallGame
         {
             _characterData = Data.Instance.Character;
         }
+        
         public void Execute()
         {
             if (!Services.Instance.LoadLevelService.IsLvlLoaded())

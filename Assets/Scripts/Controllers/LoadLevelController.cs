@@ -4,7 +4,7 @@ namespace BallGame
     {
         public void Init()
         {
-            throw new System.NotImplementedException();
+            Services.Instance.LoadLevelService.LoadLevel(LevelType.FirstLevel, CharacterType.Player1);
         }
     }
 }
