@@ -8,6 +8,7 @@ namespace BallGame
         public static Services Instance => _instance.Value;
         public LoadLevelService LoadLevelService { get; private set; }
         public UnityTimeService UnityTimeService { get; private set; }
+        public CameraServices CameraServices { get; private set; }
         
         public Services()
         {
@@ -18,6 +19,7 @@ namespace BallGame
         {
             LoadLevelService = new LoadLevelService();
             UnityTimeService = new UnityTimeService();
+            CameraServices = new CameraServices();
         }
     }
 }

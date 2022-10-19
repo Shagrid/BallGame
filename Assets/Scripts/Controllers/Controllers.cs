@@ -13,8 +13,9 @@ namespace BallGame
         {
             _initializations = new IInitialization[1];
             _initializations[0] = new LoadLevelController();
-            _executeControllers = new IExecute[1];
+            _executeControllers = new IExecute[2];
             _executeControllers[0] = new InputController();
+            _executeControllers[1] = new CameraController();
         }
         
         public void Init()

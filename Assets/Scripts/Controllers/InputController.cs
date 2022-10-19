@@ -43,7 +43,6 @@ namespace BallGame
             // Перемещение шара
             var movement = new Vector3(moveHorizontal, 0, moveVertical);
             _characterData.CharacterBehaviour.Move(movement);
-
         }
 
         private void EnabledGiro()
